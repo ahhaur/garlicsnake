@@ -27,8 +27,7 @@ tokenizer = Tokenizer(num_words=10000, filters='!"#$%&()*+,-./:;<=>?@[\\]^_`{|}~
 tokenizer.fit_on_texts(dataset)
 
 # word_index
-word_index = tokenizer.word_index
-word_index["<PAD>"] = 0
+#word_index = tokenizer.word_index
 
 # Save to file
 """
@@ -38,7 +37,7 @@ with io.open('data_tokenizer.json', 'w', encoding='utf-8') as f:
 
 # Tokenize and add paddings
 train_data = tokenizer.texts_to_sequences(dataset)
-train_data = keras.preprocessing.sequence.pad_sequences(train_data, value=word_index["<PAD>"], padding="post", maxlen=250)
+train_data = keras.preprocessing.sequence.pad_sequences(train_data, value=0, padding="post", maxlen=250)
 
 # Select training set/validation set/test set
 x_val = np.asarray(train_data[:35000])
