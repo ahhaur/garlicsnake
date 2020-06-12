@@ -2,4 +2,4 @@
 What is GarlicSnake
 ###################
 
-This is the respository for me to share my learning of LP/NLP/ML in Python. 
+This is the respository for me to share LP/NLP/ML codings in Python. 
