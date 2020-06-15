@@ -14,3 +14,6 @@ This is auto-scheduler for shifts based on demand and availability of staff.<br>
 <br>
 tf_process_user_input.py<br>
 This is a machine learning model using Tensorflow/Keras to identify user input.<br>
+<br>
+staircase_problem.py<br>
+Algorithm to solve staircase problem.<br>
